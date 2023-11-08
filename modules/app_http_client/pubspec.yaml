@@ -1,0 +1,16 @@
+name: app_http_client
+description: Http client
+version: 1.0.0
+publish_to: 'none'
+
+environment:
+  sdk: ">=2.19.0 <=3.3.0"
+
+dependencies:
+  dio: ^5.2.1+1
+  shared_preferences: ^2.2.0
+  dio_smart_retry: ^5.0.0
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+
