@@ -8,6 +8,6 @@ part of 'item_entity_impl.dart';
 
 ItemEntityImpl _$ItemEntityImplFromJson(Map<String, dynamic> json) =>
     ItemEntityImpl(
-      json['id'] as int,
-      name: json['name'] as String,
+      json['id'],
+      name: json['full_name'] as String,
     );

@@ -12,11 +12,15 @@ class ItemEntityImpl extends ItemEntity {
   )
   bool isFavorite;
 
+  @override
+  @JsonKey(name: 'full_name')
+  String name;
+
   ItemEntityImpl(
-    super.id, {
-    required super.name,
+    id, {
+    required this.name,
     this.isFavorite = false,
-  });
+  }) : super(id, name: name);
 
   factory ItemEntityImpl.fromJson(Map<String, dynamic> json) =>
       _$ItemEntityImplFromJson(json);
