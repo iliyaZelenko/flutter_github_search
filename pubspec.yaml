@@ -17,9 +17,13 @@ dependencies:
   json_annotation: ^4.8.1
   flutter_bloc: ^8.1.3
   equatable: ^2.0.3
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
 
   app_http_client:
     path: ./modules/app_http_client
+  cache_data_storage:
+    path: ./modules/cache_data_storage
 
 dev_dependencies:
   flutter_test:

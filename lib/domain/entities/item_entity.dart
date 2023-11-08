@@ -6,7 +6,7 @@ typedef ItemEntityIdType = int;
 
 class ItemEntity extends Entity<ItemEntityIdType> with EquatableMixin {
   final String name;
-  final bool isFavorite;
+  bool isFavorite;
 
   ItemEntity(
     super.id, {

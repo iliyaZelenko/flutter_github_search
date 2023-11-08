@@ -1,0 +1,16 @@
+name: cache_data_storage
+description: Cache Data Storage
+version: 1.0.0
+publish_to: 'none'
+
+environment:
+  sdk: ">=2.19.0 <=3.3.0"
+
+dependencies:
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  build_runner: ^2.2.0
+  injectable_generator: ^2.1.6

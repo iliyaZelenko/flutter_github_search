@@ -8,4 +8,6 @@ abstract class Entity<T> {
 
   @override
   bool operator ==(covariant Entity other) => other.id == id;
+
+  bool isSame(Entity other) => other.id == id;
 }

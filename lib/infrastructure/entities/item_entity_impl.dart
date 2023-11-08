@@ -10,7 +10,7 @@ class ItemEntityImpl extends ItemEntity {
     includeFromJson: false,
     includeToJson: false,
   )
-  final bool isFavorite;
+  bool isFavorite;
 
   ItemEntityImpl(
     super.id, {
