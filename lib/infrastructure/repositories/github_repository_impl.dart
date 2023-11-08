@@ -3,7 +3,7 @@ import 'package:github_search/domain/entities/item_entity.dart';
 import 'package:injectable/injectable.dart';
 
 import '../../domain/repositories/github_repository.dart';
-import '../entities/item_entity_impl.dart';
+import '../entities/item_entity_http_impl.dart';
 
 @LazySingleton(as: GithubRepository)
 class GithubRepositoryImpl implements GithubRepository {
@@ -25,7 +25,7 @@ class GithubRepositoryImpl implements GithubRepository {
     );
 
     return response.data['items']
-        .map<ItemEntity>((e) => ItemEntityImpl.fromJson(e))
+        .map<ItemEntity>((e) => ItemEntityHttpImpl.fromJson(e))
         .toList();
   }
 }

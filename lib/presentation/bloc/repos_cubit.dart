@@ -74,21 +74,27 @@ class ReposCubit extends Cubit<ReposCubitState> with ReposCubitCacheMixin {
     final favoriteItems = state.favoriteItems.map(toggleIfNeed).toList();
     final searchItems = state.searchItems.map(toggleIfNeed).toList();
     final historyItems = state.historyItems.map(toggleIfNeed).toList();
-    final favorite = [
+    final favorite = <ItemEntity>[
       ...favoriteItems,
       ...searchItems,
       ...historyItems,
     ].where((e) => e.isFavorite);
     // Только уникальные элементы
-    final actualFavoriteItems = [
-      ...{...favorite}
-    ];
+    final uniqueFavoriteItems = <ItemEntity>[];
+
+    for (var item in favorite) {
+      if (uniqueFavoriteItems.any((e) => e.isSame(item))) {
+        continue;
+      }
+
+      uniqueFavoriteItems.add(item);
+    }
 
     emit(
       state.copyWith(
         searchItems: searchItems,
         historyItems: historyItems,
-        favoriteItems: actualFavoriteItems,
+        favoriteItems: uniqueFavoriteItems,
       ),
     );
 

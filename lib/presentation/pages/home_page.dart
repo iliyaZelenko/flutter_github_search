@@ -81,7 +81,7 @@ class HomePage extends StatelessWidget {
 
                   return AppItemsList(
                     items: state.searchItems.isEmpty
-                        ? state.historyItems
+                        ? state.historyItems.reversed.toList()
                         : state.searchItems,
                   );
                 },

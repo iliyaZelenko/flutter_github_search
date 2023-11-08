@@ -1,13 +1,13 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'item_entity_impl.dart';
+part of 'item_entity_http_impl.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-ItemEntityImpl _$ItemEntityImplFromJson(Map<String, dynamic> json) =>
-    ItemEntityImpl(
+ItemEntityHttpImpl _$ItemEntityHttpImplFromJson(Map<String, dynamic> json) =>
+    ItemEntityHttpImpl(
       json['id'],
       name: json['full_name'] as String,
     );
