@@ -1,5 +1,8 @@
 # [github_search](https://www.figma.com/file/iuGFkvS9fSzClOvPVdKELI/Flutter-Test-Screens?node-id=2-2490&t=HZ0sQRJno9S5qhDh-0)
 
+<img width="667" alt="image" src="https://github.com/iliyaZelenko/flutter_github_search/assets/13103045/b8dd0873-4889-4157-9901-d9d436ee5197">
+
+
 DDD with Clean Architecture is used.
 
 Please, write an application, which searches Repositories by name using GitHub API.
